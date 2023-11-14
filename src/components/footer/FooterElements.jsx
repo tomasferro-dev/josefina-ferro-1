@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const NavBarContainer = styled.div`
+export const FooterContainer = styled.div`
+    /* border: 1px solid red; */
     width: 100%;
-    height: 123px;
-    position: sticky;
+    height: 250px;
     top: 0;
     z-index: 99;
-    background-color: #118ab2;
+    background-color: #222;
+    user-select: none;
+
 `;
 
-export const NavBarWrapper = styled.div`
+export const FooterWrapper = styled.div`
     margin: auto;
     width: 100%;
     max-width: 1080px;
@@ -27,13 +29,20 @@ export const IconLogo = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding-left: 1rem;
+    &:hover {
+        img{
+            width: 105px ;
+            transition: 0.1s ease-in;
+        }
+    }
+
 `;
 
 export const Menu = styled.ul`
-    height: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;    
+    gap: 20px;
 
     @media screen and (max-width: 960px) {
         width: 100%;
@@ -49,19 +58,16 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-    height: 100%;
-    min-width: 100px;
-    padding: 0.5rem 1.5rem;
     display: flex;
+    margin: 0 20px;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    font-family: 'Oswald';
     font-weight: 400;
-
     &:hover {
-        background-color: #023e8a;
-        border-bottom: 0.5rem solid #90e0ef;
+        font-size: 1.4rem;
+        /* background-color: #427aa1; */
+        /* border-bottom: 0.5rem solid #bee3db; */
         transition: 0.1s ease-in;
     }
 
@@ -72,11 +78,10 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuItemLink = styled(Link)`
-    height: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #e5e5e5;
+    color: #fff;
 `;
 
 export const IconLogoMobile = styled.div`
@@ -89,4 +94,32 @@ export const IconLogoMobile = styled.div`
         padding-right: 1rem;
 
     }
+`;
+
+export const FooterContactWrapper = styled.div`
+
+`;
+
+export const FooterContactList = styled.ul`
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+    color: #fff;
+`;
+
+export const ContactItem = styled.li`
+    display: flex;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+`;
+
+export const ContactLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
 `;

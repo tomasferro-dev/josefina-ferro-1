@@ -1,14 +1,14 @@
-import { LandingContainer } from "./LandingElements"
+import { LandingContainer,LandingContent,StyledTitle,LandingDesc, DescContainer } from "./LandingElements.jsx";
 
 export default function Landing() {
     return (
-        <><h1>landing</h1>
-            {/* <LandingContainer> */}
-                {/* <LandingContent>
-                    <StyledTitle>Estudio Juridico Josefina Ferro</StyledTitle>
-                    <LandingDesc></LandingDesc>
-                </LandingContent> */}
-            {/* </LandingContainer> */}
+        <>
+            <LandingContainer>
+                <LandingContent>
+                    <StyledTitle>Estudio Juridico Penal<br/>Abogada Josefina Ferro</StyledTitle>
+                    <DescContainer><LandingDesc>Asesoria Legal en Cyber-Delito</LandingDesc></DescContainer>
+                </LandingContent>
+            </LandingContainer>
         </>
     )
 }
