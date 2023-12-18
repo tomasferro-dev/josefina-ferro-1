@@ -39,13 +39,13 @@ export default function NavBar() {
                         <MenuItemLink to='/about'>Nosotros</MenuItemLink>
                     </MenuItem> 
                     <MenuItem>
-                        <MenuItemLink to='/areas'>Areas de practica</MenuItemLink>
+                        <MenuItemLink to='/fields'>Areas de practica</MenuItemLink>
                     </MenuItem> 
                     <MenuItem>
-                        <MenuItemLink to='/profesionales'>Profesionales</MenuItemLink>
+                        <MenuItemLink to='/professionals'>Profesionales</MenuItemLink>
                     </MenuItem> 
                     <MenuItem>
-                        <MenuItemLink to='/contacto'>Contacto</MenuItemLink>
+                        <MenuItemLink to='/contact'>Contacto</MenuItemLink>
                     </MenuItem> 
                 </Menu>
             </NavBarWrapper>

@@ -35,6 +35,6 @@ export const AboutTitle = styled.h1`
 
 export const AboutDesc = styled.p`
     width: 600px;
-    color: #222;
+    color: #fff;
     
 `;

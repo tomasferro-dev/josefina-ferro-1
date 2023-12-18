@@ -15,6 +15,8 @@ export const LandingContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+
 `;
 
 export const LandingContent = styled.div`

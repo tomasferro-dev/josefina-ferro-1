@@ -7,20 +7,19 @@ export const AboutBackgroud = styled.div`
     background-image: url(${studio}); 
     background-repeat: no-repeat;
     background-size: cover;
+    user-select: none;
     transform: rotate(180deg);
     transform: rotateX(180deg);
-    user-select: none;
-
 `;
 
 export const AboutContainer = styled.div`
     width: 100%;
     height: 100vh;
-    transform: rotate(180deg);
-    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
 `;
 
 export const AboutContent = styled.div`
@@ -41,4 +40,48 @@ export const AboutDesc = styled.p`
     width: 600px;
     color: #fff;
     
+`;
+
+export const ProItem = styled.li`
+    display: flex;
+`;
+
+export const ProList = styled.ul`
+    
+`;
+
+export const ProName = styled.h1`
+`;
+
+export const ProDesc = styled.h3`
+`;
+
+export const ImageContainer = styled.div`
+    /* width: 600px; */
+    display: flex;
+    justify-content: flex-end;
+    
+`;
+
+export const Infocontainer = styled.div`
+    /* width: 600px; */
+    display: grid;
+    gap: 10px;
+    width: 600px;
+`;
+
+export const ProContainer = styled.div`
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    gap: 100px;
+`;
+
+export const ProfilePic = styled.img`
+    width: 200px;
+    border-radius: 50%;
+    margin-left: -150px;
+`;
+
+export const ProWrapper = styled.div`
 `;
